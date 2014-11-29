@@ -7,21 +7,22 @@ This library is being used in [gngr](https://gngr.info)
 
 ```
 
-      ┌────────────┐     uses     ┌────────────┐
+      ┌────────────┐        uses  ┌────────────┐
       │ CSS Dom    │<─────────────│ Javascript │
       │ Interfaces │              └────────────┘
       └────────────┘
              ^                               
              │                               
+             │                               
              │ implements                              
              │                               
-      ╔══════╧════╗                          
-      ║ You are   ║                          
-      ║ here (X)  ║                          
-      ╚══════╤════╝                          
-             │                               
+      ╔══════╧═════════╗                          
+      ║     Bridge     ║
+      ║ (you are here) ║
+      ╚══════╤═════════╝                          
              │                               
              │ uses                          
+             │                               
              │                               
              V                               
       ┌──────────────┐                        
