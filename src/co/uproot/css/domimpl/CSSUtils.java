@@ -42,7 +42,7 @@ final class CSSUtils {
     final StyleSheet jSheet = parse(selectorText + "{}");
     if (jSheet.size() > 0) {
       final RuleSet ruleSet = (RuleSet) jSheet.get(0);
-      return ruleSet.getSelectors();
+      return Arrays.asList(ruleSet.getSelectors());
     }
     return new ArrayList<CombinedSelector>();
   }
