@@ -59,7 +59,6 @@ final class CSSStyleRuleImpl extends AbstractCSSRule implements CSSStyleRule {
 
   public void setSelectorText(final String selectorText) throws DOMException {
     final List<CombinedSelector> combinedSelectors = CSSUtils.createCombinedSelectors(selectorText);
-    this.ruleSet.getSelectors().clear();
     this.ruleSet.setSelectors(combinedSelectors);
     this.containingStyleSheet.informChanged();
   }
